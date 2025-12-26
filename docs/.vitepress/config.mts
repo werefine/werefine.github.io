@@ -14,7 +14,7 @@ const vitepressOptions = {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '技术', link: '/tech' },
+      { text: '技术', link: 'https://www.yuque.com/werefine/techblog' },
       { text: '关于', link: '/about' }
     ],
     docFooter: {
