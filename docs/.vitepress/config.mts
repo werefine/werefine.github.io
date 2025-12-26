@@ -17,9 +17,10 @@ const vitepressOptions = {
       { text: '技术', link: '/tech' },
       { text: '关于', link: '/about' }
     ],
-
-
-
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
