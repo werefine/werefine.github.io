@@ -1,29 +1,36 @@
 import { defineConfig } from 'vitepress'
+import { withSidebar } from 'vitepress-sidebar'
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
-  base: '/weref.cn/',
+const vitepressOptions = {
+  title: "WeRefine",
+  description: "WeRefine的主页 - 技术、思考",
+  lang: "zh-Hans",
+//   base: '/weref.cn/',
+  head: [
+    ['link', { rel: 'icon', href: '/weref.cn/ava.jpg', color: '#000000'}],
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+    //   { text: '主页', link: '/' },
+    //   { text: '技术', link: 'https://www.yuque.com/werefine/techblog' },
     ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/werefine' }
     ]
   }
-})
+}
+
+const vitePressSidebarOptions = {
+  // VitePress Sidebar's options here...
+  documentRootPath: '/docs',
+  collapsed: false,
+  capitalizeFirst: true
+};
+
+export default defineConfig(withSidebar(vitepressOptions, vitePressSidebarOptions))
