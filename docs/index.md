@@ -17,7 +17,7 @@ hero:
 features:
   - title: ArxivWeref
     details: 一个Arxiv的阅览站
-    link: https://arxiv.weref.cn/
+    link: https://x.weref.cn/
     linkText: 立刻探索
   - title: 技术博客
     details: 坐北朝南，写东、写西。
