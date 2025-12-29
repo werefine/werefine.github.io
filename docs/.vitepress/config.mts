@@ -6,7 +6,7 @@ const vitepressOptions = {
   title: "WeRefine",
   description: "WeRefine的主页 - 技术、思考",
   lang: "zh-Hans",
-  base: '/weref.cn/',
+//   base: '/weref.cn/',
   head: [
     ['link', { rel: 'icon', href: '/weref.cn/ava.jpg', color: '#000000'}],
   ],
