@@ -13,16 +13,15 @@ const vitepressOptions = {
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
-      { text: '技术', link: 'https://www.yuque.com/werefine/techblog' },
-      { text: '关于', link: '/about' }
+    //   { text: '主页', link: '/' },
+    //   { text: '技术', link: 'https://www.yuque.com/werefine/techblog' },
     ],
     docFooter: {
       prev: '上一篇',
       next: '下一篇'
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/werefine' }
     ]
   }
 }
